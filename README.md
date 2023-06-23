@@ -7,8 +7,6 @@ shoots back.
 The game is available at
 [https://battleship.deno.dev](https://battleship.deno.dev).
 
-[![Made with Fresh](https://fresh.deno.dev/fresh-badge-dark.svg)](https://fresh.deno.dev)
-
 ## Running the game locally
 
 Install [Deno CLI](https://deno.land) version 1.31.0 or higher.
@@ -47,6 +45,6 @@ This game is built using:
 
 ## License
 
-[MIT License](./LICENSE.md)
+[MIT License](./LICENSE)
 
 Copyright © 2023 [Karel Klima](https://karelklima.com)
