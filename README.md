@@ -1,16 +1,52 @@
-# Fresh project
+# Battleship
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+This is a single-player version of **Battleship**, a popular strategy naval war
+game. You as the player may shoot at the opponent ships, but the opponent never
+shoots back.
 
-### Usage
+The game is available at
+[https://battleship.deno.dev](https://battleship.deno.dev).
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+[![Made with Fresh](https://fresh.deno.dev/fresh-badge-dark.svg)](https://fresh.deno.dev)
 
-Then start the project:
+## Running the game locally
+
+Install [Deno CLI](https://deno.land) version 1.31.0 or higher.
+
+From within the project folder, start the game using this command:
 
 ```
 deno task start
 ```
 
-This will watch the project directory and restart as necessary.
+Now open http://localhost:8000 in your browser to view the game.
+
+## Configuration options
+
+By default, the game is configured to use 10x10 grid and three ships. The
+settings can be adjusted by modifying the `./game/config.ts` file. An example of
+alternative configuration:
+
+```typescript
+/** Size of the battlefield */
+export const GRID_SIZE = 8;
+
+/** Available ships on the battlefield */
+export const SHIPS = [7, 4, 3, 2];
+```
+
+## Technology
+
+This game is built using:
+
+- [Deno](https://deno.land)
+- [Fresh](https://fresh.deno.dev)
+- [Preact](https://preactjs.com)
+- [Preact signals](https://preactjs.com/guide/v10/signals)
+- [Twind](https://twind.dev)
+
+## License
+
+[MIT License](./LICENSE.md)
+
+Copyright © 2023 [Karel Klima](https://karelklima.com)
